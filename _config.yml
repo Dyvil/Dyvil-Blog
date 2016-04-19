@@ -1,0 +1,20 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: The Dyvil Blog
+email: clashsoft@hotmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is the official Dyvil update blog! I will post updates on the language every few updates here, so stay tuned.
+  This website is currently under development.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dyvil.github.io" # the base hostname & protocol for your site
+twitter_username: clashsoft
+github_username:  dyvil
+
+# Build settings
+markdown: redcarpet
