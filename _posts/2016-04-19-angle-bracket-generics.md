@@ -2,7 +2,7 @@
 layout: post
 title:  "Problems of Angle Bracket Generics"
 date:   2016-04-19 15:00:00 +0200
-categories: syntax generics
+categories: syntax
 ---
 
 In the previous blog post, I talked about how using `<>` for Generics was really difficult to design. The main reason for this are the ambiguities it introduces. In this blog post, I want to describe how other languages resolved this problem and how it was ultimately implemented in Dyvil. Not because it is an extremely interesting or enlightening story, but because it took me forever to figure out the dynamics of Angle Bracket Generics. If you are a language designer or just making a programming language with generics for fun, then buckle up, because this is going to be a tough ride.
