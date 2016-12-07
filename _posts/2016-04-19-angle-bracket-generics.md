@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Problems of Angle Bracket Generics"
-date:   2016-04-19 15:00:00 +0200
+date:   2016-04-19
 categories: syntax
 ---
 
@@ -20,7 +20,7 @@ The lexer would convert the following type into the list of tokens:
 
 ```swift
 Map<int, List<String>>
--> [ 'Map', '<', 'int', ',', 'List', '<', 'String', '>>' ]
+-> [ "Map", "<", "int", ",", "List", "<", "String", ">>" ]
 ```
 
 You might notice that although `<>` work like brackets in types, the lexer treats them as identifiers. This means that,
@@ -33,13 +33,11 @@ that fails. The most common example is Local Variables. Within a Statement List,
 or a declaration:
 
 ```java
-{
 int i = 0
 int add(int i, int j) = i + j
 List<List<int>> myList = []
 println i
 new FooFactory().withName("test").forString("abc").deploy()
-}
 ```
 
 There is no straight-forward way to tell these expressions apart without parsing multiple tokens (at least two in these
@@ -95,7 +93,7 @@ readable, not easily writable, and a limited set of conditions for a certain pro
 Swift was a bit more tricky. It is a fairly young language, so there are way less resources that could provide insight
 to such a small edge case. I found the answer in the [Swift compiler source code][2], nicely formatted in a comment:
 
-```cpp
+```java
 ///   The generic-args case is ambiguous with an expression involving '<'
 ///   and '>' operators. The operator expression is favored unless a generic
 ///   argument list can be successfully parsed, and the closing bracket is
