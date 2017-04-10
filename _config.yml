@@ -8,8 +8,9 @@
 # Site settings
 title: The Dyvil Blog
 email: clashsoft@hotmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  This is the official Dyvil update blog! I will post updates on the language every few updates here, so stay tuned.
+description: >
+  This is the official Dyvil update blog! You can expect Releases Summaries of the language every few updates as well as
+  interesting articles, observations and rants about the design and implementation process.
   This website is currently under development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dyvil.github.io" # the base hostname & protocol for your site
@@ -17,7 +18,4 @@ twitter_username: clashsoft
 github_username:  dyvil
 
 # Build settings
-markdown: redcarpet
-
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+markdown: kramdown
