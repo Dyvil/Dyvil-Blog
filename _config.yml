@@ -12,8 +12,8 @@ description: >
   This is the official Dyvil update blog! You can expect Update Summaries of the language every few releases as well as
   interesting articles, observations and rants about the design and implementation process.
   This website is currently under development.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dyvil.github.io" # the base hostname & protocol for your site
+baseurl: "/dyvil/blog" # the subpath of your site, e.g. /blog
+url: "https://www.clashsoft.de" # the base hostname & protocol for your site
 twitter_username: clashsoft
 github_username:  dyvil
 
