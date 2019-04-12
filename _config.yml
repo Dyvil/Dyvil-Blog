@@ -19,3 +19,7 @@ github_username:  dyvil
 
 # Build settings
 markdown: kramdown
+
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-dinky
